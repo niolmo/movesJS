@@ -1,0 +1,110 @@
+@import url("./reset.css");
+@import url("./fonts.css");
+@import url("./loader.css");
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  background-image: url("../img/bg.png");
+  background-attachment: fixed; /* для адаптивности фиксированный фон */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-left {
+  padding: 25px 15px 100px;
+  width: 930px;
+  min-height: 100vh;
+  border-right: 1px solid #162344;
+}
+
+.title-1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.films {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  margin-bottom: 30px;
+}
+
+.film-cart {
+  padding-bottom: 15px;
+  width: 200px;
+  border-radius: 6px;
+  background-color: rgb(22, 22, 22);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.film-cart:hover {
+  transform: scale(1.05);
+  background-color: rgb(35, 35, 35);
+  box-shadow: 0 10px 10px 20px rgba(0, 65, 152, 0.5);
+}
+
+.film-cart__img {
+  margin-bottom: 15px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.film-cart__title {
+  padding: 0 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.film-cart__year {
+  padding: 0 5px;
+  font-weight: regular;
+  font-size: 14px;
+  color: rgb(7, 150, 252);
+}
+
+.film-cart__genre {
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.film-cart__rating {
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: goldenrod;
+}
+
+.show-more {
+  display: block;
+  padding: 10px 30px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: rgb(16, 85, 205);
+  transition: opacity 0.3s ease-in;
+}
+
+.show-more:hover {
+  opacity: 0.8;
+}
+
+.loader-erapper {
+  padding: 50px 0;
+  text-align: center;
+}

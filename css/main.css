@@ -22,6 +22,18 @@ body {
   border-right: 1px solid #162344;
 }
 
+.container-rigth {
+  position: fixed;
+  padding: 0 25px;
+  left: 930px;
+  top: 0;
+  width: 800px;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: #162344;
+  background-color: rgba(5, 56, 185, 0.2);
+}
+
 .title-1 {
   margin-bottom: 30px;
   font-size: 28px;
@@ -107,4 +119,44 @@ body {
 .loader-erapper {
   padding: 50px 0;
   text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.film {
+  display: grid;
+  grid-template-areas: "title title" "photo desc";
+  gap: 30px;
+}
+
+.film__title {
+  grid-area: title;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.film__img {
+  grid-area: photo;
+}
+
+.film__desc {
+  grid-area: desc;
+}
+
+.film__details {
+  color: aqua;
+}
+
+.film__text {
+  margin-top: 30px;
+  font-weight: 300;
 }
